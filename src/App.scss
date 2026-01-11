@@ -1,0 +1,27 @@
+$primary-color: #646cff;
+
+.app {
+  #root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .card {
+    padding: 2em;
+
+    button {
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 0.25em;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
