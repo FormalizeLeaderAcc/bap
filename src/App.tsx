@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './App.scss'
+import DesignPage from './DesignPage'
+import NewPage from './NewPage'
 
 function Home() {
   return (
@@ -36,10 +38,18 @@ function App() {
           <button onClick={() => setCount((count) => count + 1)}>
             count is {count}
           </button>
+          <br/>
+          <br/>
+          
           <p>
             Welcome to the BAP
           </p>
         </div>
+         <button onClick={() => setCount((count) => count + 1)}>
+            count is {count}
+          </button>
+          <DesignPage />
+          <NewPage />
       </div>
     </Router>
   )
